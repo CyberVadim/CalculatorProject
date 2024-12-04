@@ -10,9 +10,10 @@ public class Calculator {
         String example4 = "1 * 2 1";
         String example5 = "ыыы";
         String example6 = " ";
+        String example7 = "1 + 2.1";
 
         try {
-            System.out.println(calc(example5)); // меняйте на любой example
+            System.out.println(calc(example7)); // меняйте на любой example
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
