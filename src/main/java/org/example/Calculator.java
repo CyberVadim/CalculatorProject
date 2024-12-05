@@ -42,7 +42,7 @@ public class Calculator {
 
     private static String[] validateInput(String input) throws Exception {
         //Проверяем, что input не пустой, не NULL и не имеет букв
-        if (input == null || input.isEmpty() || !input.matches(".*[a-zA-Z\\\\u0400-\\\\u04FF].*")) {
+        if (input.equals(null) || input.isEmpty() || !input.matches(".*[a-zA-Z\\\\u0400-\\\\u04FF].*")) {
             throw new Exception("Невалидный ввод символа");
         }
 
